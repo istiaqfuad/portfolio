@@ -86,7 +86,6 @@ export default function Hero() {
             {r}
           </span>
         ))}
-        <span>◷ {profile.location}</span>
       </motion.div>
 
       <div className="pointer-events-none absolute bottom-10 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-[0.6rem] font-mono text-[0.65rem] uppercase tracking-[0.3em] text-faint sm:flex">
