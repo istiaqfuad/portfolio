@@ -10,7 +10,7 @@ export const profile: Profile = {
   github: "https://www.github.com/istiaqfuad",
   linkedinHandle: "istiaqfuad",
   githubHandle: "istiaqfuad",
-  resume: "/Istiaqur_Rahman_Fuad_Resume.pdf",
+  resume: "Istiaqur_Rahman_Fuad_Resume.pdf",
   status: "Research Assistant Intern @ AMIR Lab",
   tagline:
     "I build full-stack software end-to-end, engineer the AI systems behind it, and do the research that pushes both forward.",

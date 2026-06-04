@@ -42,7 +42,7 @@ export default function Nav() {
         ))}
         <a
           className="rounded-full border border-line-strong px-4 py-2 font-mono text-[0.78rem] text-text transition-colors hover:border-teal hover:text-teal"
-          href={profile.resume}
+          href={`${import.meta.env.BASE_URL}${profile.resume}`}
           target="_blank"
           rel="noreferrer"
         >
