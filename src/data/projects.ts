@@ -1,0 +1,44 @@
+import type { Project } from "../types";
+
+export const projects: Project[] = [
+  {
+    name: "TriBne-e5-small",
+    tag: "Multilingual Sentence Embeddings",
+    note: "Self-built · Live demo on Hugging Face",
+    blurb:
+      "A sentence-embedding model for Bangla, English, and Banglish (romanized Bengali) text — matching spelling variants across scripts where standard multilingual encoders fall short.",
+    detail:
+      "LoRA fine-tuned multilingual-e5-small (118M params) with contrastive loss on 2.4M pairs.",
+    stack: ["Python", "PyTorch", "sentence-transformers", "Hugging Face", "LoRA"],
+    metrics: [
+      { value: "0.890", label: "MRR@10 · Banglish", delta: "+27" },
+      { value: "0.981", label: "Cross-script retrieval", delta: "+48" },
+      { value: "2.4M", label: "Training pairs", delta: null },
+    ],
+    links: [
+      { label: "Demo", href: "https://huggingface.co/spaces/istiaqfuad/triBne-e5-small-demo" },
+      { label: "GitHub", href: "https://github.com/istiaqfuad/triBne-e5" },
+    ],
+    accent: "var(--color-teal)",
+  },
+  {
+    name: "PetSoft",
+    tag: "Full-Stack · Pet Daycare Platform",
+    note: "Self-built · Deployed live",
+    blurb:
+      "A subscription-style pet daycare management app with secure authentication, Stripe-powered billing, and a responsive interface — built to explore a full SaaS flow end-to-end.",
+    detail:
+      "Full-stack app with server-rendered pages and a clean, accessible component layer.",
+    stack: ["Next.js", "Prisma", "TailwindCSS", "Radix UI", "Stripe", "React Hook Form"],
+    metrics: [
+      { value: "Stripe", label: "Subscription billing", delta: null },
+      { value: "Auth", label: "Secure sessions", delta: null },
+      { value: "SSR", label: "Responsive UI", delta: null },
+    ],
+    links: [
+      { label: "Live", href: "https://petcare.irflab.tech/" },
+      { label: "GitHub", href: "https://github.com/istiaqfuad/petsoft" },
+    ],
+    accent: "var(--color-coral)",
+  },
+];
