@@ -8,11 +8,11 @@ export const projects: Project[] = [
     blurb:
       "A sentence-embedding model for Bangla, English, and Banglish (romanized Bengali) text — matching spelling variants across scripts where standard multilingual encoders fall short.",
     detail:
-      "LoRA fine-tuned multilingual-e5-small (118M params) with contrastive loss on 2.4M pairs.",
+      "LoRA fine-tuned multilingual-e5-small (118M params) with contrastive loss on 2.4M pairs. Deltas are absolute MRR@10 gains over the base model.",
     stack: ["Python", "PyTorch", "sentence-transformers", "Hugging Face", "LoRA"],
     metrics: [
-      { value: "0.890", label: "MRR@10 · Banglish", delta: "+27" },
-      { value: "0.981", label: "Cross-script retrieval", delta: "+48" },
+      { value: "0.890", label: "MRR@10 · Banglish", delta: "+0.27" },
+      { value: "0.981", label: "Cross-script retrieval", delta: "+0.48" },
       { value: "2.4M", label: "Training pairs", delta: null },
     ],
     links: [

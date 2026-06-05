@@ -1,17 +1,26 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { profile, pillars } from "../../data";
 import { useRotatingIndex } from "../../hooks/useRotatingIndex";
-
-// Reusable staggered fade-up for the hero's one-time entrance.
-const fade = (delay: number) => ({
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
-});
 
 export default function Hero() {
   const i = useRotatingIndex(pillars.length);
   const pillar = pillars[i];
+  const reduce = useReducedMotion();
+
+  // Staggered fade-up for the hero's one-time entrance.
+  // No-op (static render) under prefers-reduced-motion.
+  const fade = (delay: number) =>
+    reduce
+      ? {}
+      : {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: {
+            duration: 0.8,
+            delay,
+            ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
+          },
+        };
 
   return (
     <header
@@ -51,9 +60,9 @@ export default function Hero() {
           <motion.span
             key={pillar.label}
             style={{ color: pillar.accent }}
-            initial={{ opacity: 0, y: 8 }}
+            initial={{ opacity: 0, y: reduce ? 0 : 8 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
+            exit={{ opacity: 0, y: reduce ? 0 : -8 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
             {pillar.blurb}
@@ -88,7 +97,10 @@ export default function Hero() {
         ))}
       </motion.div>
 
-      <div className="pointer-events-none absolute bottom-10 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-[0.6rem] font-mono text-[0.65rem] uppercase tracking-[0.3em] text-faint sm:flex">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-10 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-[0.6rem] font-mono text-[0.65rem] uppercase tracking-[0.3em] text-faint sm:flex"
+      >
         <span>scroll</span>
         <span className="h-9 w-px animate-drip bg-gradient-to-b from-faint to-transparent" />
       </div>

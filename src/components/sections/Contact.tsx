@@ -49,7 +49,10 @@ export default function Contact() {
           <a href={telHref} className="inline-flex items-center gap-1 text-muted transition-colors hover:text-teal">
             {profile.phone}
           </a>
-          <span className="text-faint">◷ {profile.location}</span>
+          <span className="text-faint">
+            <span aria-hidden="true">◷ </span>
+            {profile.location}
+          </span>
         </div>
       </Reveal>
     </section>

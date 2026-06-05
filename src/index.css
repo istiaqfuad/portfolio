@@ -14,7 +14,7 @@
   --color-line-strong: rgba(180, 196, 235, 0.22);
   --color-text: #eef2fb;
   --color-muted: #9099b1;
-  --color-faint: #5b6480;
+  --color-faint: #7b85a3;
   --color-teal: #5eead4;
   --color-amber: #f6b24a;
   --color-coral: #ff6b81;
@@ -172,8 +172,12 @@
     opacity: 0;
     transition: opacity 0.3s ease;
   }
-  .node-dot.active .node-ring {
+  .node-dot.active .node-ring,
+  .node-dot:focus-visible .node-ring {
     opacity: 1;
+  }
+  .node-dot:focus-visible .node-label {
+    fill: var(--color-text);
   }
   .node-dot.dim {
     opacity: 0.28;

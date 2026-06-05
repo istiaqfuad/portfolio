@@ -13,6 +13,9 @@ const TOPK = 3;
 const colorFor = (d: Domain): string =>
   d === "nlp" ? "var(--color-teal)" : d === "web" ? "var(--color-coral)" : "var(--color-amber)";
 
+const domainName = (d: Domain): string =>
+  d === "nlp" ? "AI / ML" : d === "web" ? "Software" : "Core";
+
 const LEGEND = [
   { color: "var(--color-coral)", label: "Software" },
   { color: "var(--color-teal)", label: "AI / ML" },
@@ -67,8 +70,8 @@ export default function SemanticSpace() {
           <svg
             className="block h-auto w-full touch-pan-y"
             viewBox={`0 0 ${W} ${H}`}
-            role="img"
-            aria-label="Interactive map of skills and projects positioned by semantic similarity"
+            role="list"
+            aria-label="Skills and projects mapped by semantic similarity. Focus a node to hear its nearest neighbors."
           >
             {activeNode &&
               neighbors.map(({ node, sim }) => {
@@ -103,7 +106,11 @@ export default function SemanticSpace() {
                   className={`node-dot ${isActive ? "active" : ""} ${dim ? "dim" : ""} ${
                     n.kind === "project" ? "project" : ""
                   }`}
+                  role="listitem"
                   tabIndex={0}
+                  aria-label={`${n.label} — ${domainName(n.domain)}${
+                    n.kind === "project" ? ", featured project" : ""
+                  }`}
                   onMouseEnter={() => setActive(n.id)}
                   onMouseLeave={() => setActive(null)}
                   onFocus={() => setActive(n.id)}
@@ -128,7 +135,7 @@ export default function SemanticSpace() {
       </Reveal>
 
       <Reveal delay={0.1}>
-        <div className="mt-6 min-h-[1.4em] font-mono text-[0.8rem] text-faint">
+        <div className="mt-6 min-h-[1.4em] font-mono text-[0.8rem] text-faint" aria-live="polite">
           {activeNode ? (
             <>
               nearest to <b className="font-medium text-teal">{activeNode.label}</b> →{" "}
@@ -147,7 +154,9 @@ export default function SemanticSpace() {
             {l.label}
           </span>
         ))}
-        <span className="inline-flex items-center gap-2">◉ larger node = featured project</span>
+        <span className="inline-flex items-center gap-2">
+          <span aria-hidden="true">◉</span> larger node = featured project
+        </span>
       </div>
     </section>
   );

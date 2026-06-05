@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import type { CSSProperties, ReactNode } from "react";
 
 interface RevealProps {
@@ -11,7 +11,18 @@ interface RevealProps {
 
 // Scroll-triggered fade/rise — the single entrance primitive used across
 // every section for a cohesive, staggered reveal as content enters view.
+// Honors prefers-reduced-motion: renders static (no fade/slide) when set.
 export default function Reveal({ children, delay = 0, y = 26, className, style }: RevealProps) {
+  const reduce = useReducedMotion();
+
+  if (reduce) {
+    return (
+      <div className={className} style={style}>
+        {children}
+      </div>
+    );
+  }
+
   return (
     <motion.div
       className={className}

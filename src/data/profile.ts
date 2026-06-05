@@ -32,7 +32,7 @@ export const pillars: Pillar[] = [
   {
     label: "AI",
     accent: "var(--color-violet)",
-    blurb: "Transformer models fine-tuned and shipped as working live demos.",
+    blurb: "Transformer models fine-tuned and deployed as working live demos.",
   },
   {
     label: "Research",

@@ -13,10 +13,16 @@ import Contact from "./components/sections/Contact";
 export default function App() {
   return (
     <>
+      <a
+        href="#main"
+        className="sr-only rounded-full border border-teal bg-ink px-4 py-2 font-mono text-sm text-teal focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[10000]"
+      >
+        Skip to content
+      </a>
       <CursorGlow />
       <NeuralField />
       <Nav />
-      <main className="relative z-10">
+      <main id="main" className="relative z-10">
         <Hero />
         <About />
         <SemanticSpace />
