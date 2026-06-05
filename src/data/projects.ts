@@ -29,7 +29,7 @@ export const projects: Project[] = [
       "A subscription-style pet daycare management app with secure authentication, Stripe-powered billing, and a responsive interface — built to explore a full SaaS flow end-to-end.",
     detail:
       "Full-stack app with server-rendered pages and a clean, accessible component layer.",
-    stack: ["Next.js", "Prisma", "TailwindCSS", "Radix UI", "Stripe", "React Hook Form"],
+    stack: ["Next.js", "Prisma", "TailwindCSS", "Stripe", "React Hook Form"],
     metrics: [
       { value: "Stripe", label: "Subscription billing", delta: null },
       { value: "Auth", label: "Secure sessions", delta: null },
