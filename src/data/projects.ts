@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     name: "TriBne-e5-small",
     tag: "Multilingual Sentence Embeddings",
-    note: "Self-built · Live demo on Hugging Face",
+    note: "Built solo at AMIR Lab · Hugging Face demo",
     blurb:
       "A sentence-embedding model for Bangla, English, and Banglish (romanized Bengali) text — matching spelling variants across scripts where standard multilingual encoders fall short.",
     detail:
