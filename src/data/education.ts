@@ -3,7 +3,7 @@ import type { Credential, Education } from "../types";
 export const education: Education = {
   school: "University of Rajshahi",
   degree: "B.Sc. in Computer Science and Engineering",
-  period: "Jan 2022 — Present",
+  period: "Jan 2022 — Expected 2026",
   cgpa: "CGPA 3.58 / 4.00",
   coursework: [
     "Data Structures & Algorithms",

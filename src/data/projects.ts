@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     name: "TriBne-e5-small",
     tag: "Multilingual Sentence Embeddings",
-    note: "Built solo at AMIR Lab · Hugging Face demo",
+    note: "Built solo at AMIR Lab · First-author paper under review",
     blurb:
       "A sentence-embedding model for Bangla, English, and Banglish (romanized Bengali) text — matching spelling variants across scripts where standard multilingual encoders fall short.",
     detail:
@@ -20,6 +20,26 @@ export const projects: Project[] = [
       { label: "GitHub", href: "https://github.com/istiaqfuad/triBne-e5" },
     ],
     accent: "var(--color-teal)",
+  },
+  {
+    name: "LegalBuddy",
+    tag: "RAG · Legal Q&A over Bangladesh Law",
+    note: "Self-built · Deployed live",
+    blurb:
+      "A retrieval-augmented chatbot that answers questions over Bangladesh's legal acts with grounded, cited statute sections instead of hallucinations.",
+    detail:
+      "A FastAPI backend embeds queries, retrieves grounded statute sections from Qdrant, and generates cited answers with Gemini / Groq, served through a Next.js chat UI.",
+    stack: ["Python", "FastAPI", "Next.js", "Qdrant", "sentence-transformers", "Gemini / Groq", "Docker"],
+    metrics: [
+      { value: "RAG", label: "Grounded + cited", delta: null },
+      { value: "Qdrant", label: "Vector retrieval", delta: null },
+      { value: "FastAPI", label: "Typed Python API", delta: null },
+    ],
+    links: [
+      { label: "Live", href: "https://legalbuddy.irflab.tech/" },
+      { label: "GitHub", href: "https://github.com/istiaqfuad/legal-buddy" },
+    ],
+    accent: "var(--color-violet)",
   },
   {
     name: "PetSoft",
