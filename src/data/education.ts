@@ -3,19 +3,17 @@ import type { Credential, Education } from "../types";
 export const education: Education = {
   school: "University of Rajshahi",
   degree: "B.Sc. in Computer Science and Engineering",
-  period: "Jan 2022 — Expected 2026",
-  cgpa: "CGPA 3.58 / 4.00",
+  period: "Jan 2022 — Aug 2026",
+  cgpa: "CGPA 3.59 / 4.00",
   coursework: [
     "Data Structures & Algorithms",
     "Object-Oriented Programming",
     "Database Management Systems",
     "Operating Systems",
-    "Computer Networks",
-    "Computer Architecture",
     "Software Engineering",
     "Artificial Intelligence",
     "Machine Learning",
-    "Discrete Mathematics",
+    "Deep Learning",
   ],
 };
 

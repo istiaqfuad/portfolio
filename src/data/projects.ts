@@ -8,7 +8,7 @@ export const projects: Project[] = [
     blurb:
       "A sentence-embedding model for Bangla, English, and Banglish (romanized Bengali) text — matching spelling variants across scripts where standard multilingual encoders fall short.",
     detail:
-      "LoRA fine-tuned multilingual-e5-small (118M params) with contrastive loss on 2.4M pairs. Deltas are absolute MRR@10 gains over the base model.",
+      "LoRA fine-tune of multilingual-e5-small (1% parameter update, MNRL loss) on a 2.4M-pair trilingual corpus for Banglish and cross-script retrieval. Deltas are absolute MRR@10 gains over the base model.",
     stack: ["Python", "PyTorch", "sentence-transformers", "Hugging Face", "LoRA"],
     metrics: [
       { value: "0.890", label: "MRR@10 · Banglish", delta: "+0.27" },
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     ],
     links: [
       { label: "Live", href: "https://legalbuddy.irflab.tech/" },
-      { label: "GitHub", href: "https://github.com/istiaqfuad/legal-buddy" },
+      { label: "GitHub", href: "https://github.com/istiaqfuad/legalbuddy-cv" },
     ],
     accent: "var(--color-violet)",
   },
