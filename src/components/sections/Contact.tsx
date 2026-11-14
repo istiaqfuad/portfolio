@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative mx-auto max-w-[900px] px-5 pb-20 pt-28 text-center sm:px-8">
       <Reveal>
-        <Eyebrow centered>06 — Contact</Eyebrow>
+        <Eyebrow centered>06 · Contact</Eyebrow>
       </Reveal>
 
       <Reveal delay={0.05}>

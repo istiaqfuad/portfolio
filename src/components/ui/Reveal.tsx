@@ -9,7 +9,7 @@ interface RevealProps {
   style?: CSSProperties;
 }
 
-// Scroll-triggered fade/rise — the single entrance primitive used across
+// Scroll-triggered fade/rise, the single entrance primitive used across
 // every section for a cohesive, staggered reveal as content enters view.
 // Honors prefers-reduced-motion: renders static (no fade/slide) when set.
 export default function Reveal({ children, delay = 0, y = 26, className, style }: RevealProps) {

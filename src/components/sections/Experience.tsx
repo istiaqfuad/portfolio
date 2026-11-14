@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <section id="experience" className="relative mx-auto max-w-[1180px] px-5 py-20 sm:px-8 sm:py-28">
       <Reveal>
-        <Eyebrow>04 — Experience</Eyebrow>
+        <Eyebrow>04 · Experience</Eyebrow>
       </Reveal>
       <Reveal delay={0.05}>
         <SectionTitle>

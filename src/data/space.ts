@@ -17,6 +17,7 @@ export const spaceNodes: SpaceNode[] = [
   // bridge
   { id: "python", label: "Python", domain: "core", x: 0.48, y: 0.48, r: 10, vec: [0.5, 0.6, 0.6, 0.5, 0.3] },
   { id: "legalbuddy", label: "LegalBuddy", kind: "project", domain: "web", x: 0.46, y: 0.72, r: 12, vec: [0.55, 0.4, 0.7, 0.5, 0.35] },
+  { id: "dwellio", label: "Dwellio", kind: "project", domain: "web", x: 0.34, y: 0.88, r: 12, vec: [0.05, 0.1, 0.9, 0.6, 0.05] },
 
   // Software cluster (left)
   { id: "rest", label: "REST APIs", domain: "web", x: 0.42, y: 0.22, r: 8, vec: [0.05, 0.1, 0.85, 0.6, 0.05] },

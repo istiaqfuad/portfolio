@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <section id="work" className="relative mx-auto max-w-[1180px] px-5 py-20 sm:px-8 sm:py-28">
       <Reveal>
-        <Eyebrow>03 — Selected Work</Eyebrow>
+        <Eyebrow>03 · Selected Work</Eyebrow>
       </Reveal>
       <Reveal delay={0.05}>
         <SectionTitle>

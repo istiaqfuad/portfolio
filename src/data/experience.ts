@@ -5,22 +5,22 @@ export const experience: Experience[] = [
     org: "Advanced Machine Intelligence Research (AMIR) Lab",
     role: "Research Assistant Intern",
     mode: "Remote",
-    period: "Feb 2026 — Jul 2026",
+    period: "Feb 2026 – Jul 2026",
     current: false,
     points: [
-      "Curated bangla-english-banglish-pairs using custom data pipelines to achieve a 2.4M-pair trilingual contrastive dataset (Bangla / Banglish / English) published on Hugging Face for low-resource NLP research.",
-      "Trained TriBne-e5-small using PyTorch and Hugging Face to achieve an open-sourced trilingual sentence-embedding model for retrieval over code-mixed Bengali text.",
+      "Built bangla-english-banglish-pairs, a 2.4M-pair trilingual dataset (Bangla, Banglish and English), with custom data pipelines, and published it on Hugging Face for low-resource NLP research.",
+      "Trained TriBne-e5-small on that data with PyTorch and Hugging Face, and open-sourced the model for retrieval over code-mixed Bengali text.",
     ],
   },
   {
     org: "Devcore Technologies",
     role: "Next.js Developer Intern",
     mode: "Remote",
-    period: "Feb 2025 — Apr 2025",
+    period: "Feb 2025 – Apr 2025",
     current: false,
     points: [
-      "Developed a modular admin dashboard using Next.js, tRPC, Prisma, and TypeScript to achieve end-to-end type-safe APIs for a 1,000+ product e-commerce platform, delivering full product and order CRUD.",
-      "Implemented responsive, server-rendered storefront pages using Next.js App Router to achieve improved cross-device usability.",
+      "Built a modular admin dashboard for a 1,000+ product e-commerce platform with Next.js, tRPC, Prisma and TypeScript, with end-to-end type-safe APIs covering product and order CRUD.",
+      "Built responsive, server-rendered storefront pages with the Next.js App Router.",
     ],
   },
 ];

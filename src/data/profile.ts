@@ -13,11 +13,11 @@ export const profile: Profile = {
   resume: "Istiaqur_Rahman_Fuad_Resume.pdf",
   status: "Computer Science Graduate · University of Rajshahi",
   tagline:
-    "I build full-stack software end-to-end, engineer the AI systems behind it, and do the research that pushes both forward.",
+    "I build full-stack apps and the AI systems inside them, plus the research behind both.",
   about: [
-    "I'm a Computer Science & Engineering graduate from the University of Rajshahi who works across the whole stack — building and deploying full-stack web apps and engineering the AI systems behind them.",
-    "On the engineering side I build type-safe, responsive full-stack apps with Next.js, Prisma, and Postgres, plus typed Python backends with FastAPI. On the AI side I fine-tune and deploy transformer models — like TriBne-e5-small, my multilingual embedding model — and build LLM systems like LegalBuddy, a retrieval-augmented legal assistant, shipped as working live demos.",
-    "My research, at AMIR Lab, focuses on low-resource Bengali NLP: building the datasets and models that make AI work for languages the big labs overlook — work now under review as a first-author paper at Language Resources and Evaluation (Springer Nature). Software, models, research — I care about the same thing across all three: turning hard problems into things that actually run.",
+    "I graduated in Computer Science and Engineering from the University of Rajshahi. I work across the whole stack: full-stack web apps I build and deploy myself, and the AI systems that go inside them.",
+    "Most days I'm building with Next.js, Prisma and Postgres, or typed Python backends with FastAPI. I also fine-tune and ship transformer models (TriBne-e5-small is mine, a multilingual embedding model) and LLM apps like LegalBuddy, a legal assistant that answers from real statute text. Most of it is deployed, so you can click through and try it.",
+    "At AMIR Lab I researched low-resource Bengali NLP, building datasets and models for languages the big labs overlook. That work is now a first-author paper under review at Language Resources and Evaluation (Springer). What ties it together for me is simple: I like turning hard problems into things that actually run.",
   ],
 };
 
@@ -27,16 +27,16 @@ export const pillars: Pillar[] = [
   {
     label: "Software",
     accent: "var(--color-coral)",
-    blurb: "Full-stack apps, built and deployed live — type-safe and responsive.",
+    blurb: "Full-stack apps I build and ship myself.",
   },
   {
     label: "AI",
     accent: "var(--color-violet)",
-    blurb: "Transformer models fine-tuned and deployed as working live demos.",
+    blurb: "Models I fine-tune and put up as live demos.",
   },
   {
     label: "Research",
     accent: "var(--color-amber)",
-    blurb: "Low-resource NLP research for the languages big labs overlook.",
+    blurb: "NLP research for languages the big labs overlook.",
   },
 ];

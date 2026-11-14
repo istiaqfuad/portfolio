@@ -70,7 +70,7 @@ The résumé PDF in `public/` is built from a separate LaTeX source
 (`../Frehser_CV`). After recompiling it, copy the output in:
 
 ```bash
-cp ../Frehser_CV/main.pdf public/Istiaqur_Rahman_Fuad_Resume.pdf
+cp ../Frehser_CV/pdf/Istiaqur_Rahman_Fuad_Resume.pdf public/Istiaqur_Rahman_Fuad_Resume.pdf
 ```
 
 ## Deployment

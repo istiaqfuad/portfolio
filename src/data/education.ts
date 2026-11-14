@@ -3,7 +3,7 @@ import type { Credential, Education } from "../types";
 export const education: Education = {
   school: "University of Rajshahi",
   degree: "B.Sc. in Computer Science and Engineering",
-  period: "Jan 2022 — Aug 2026",
+  period: "Jan 2022 – Aug 2026",
   cgpa: "CGPA 3.59 / 4.00",
   coursework: [
     "Data Structures & Algorithms",
@@ -34,14 +34,26 @@ export const certifications: Credential[] = [
 
 export const achievements: Credential[] = [
   {
+    name: "Meta AI Developer Global Hackathon",
+    event: "Startup Track · Competed globally with LegalBuddy",
+    date: "2026",
+    href: "https://dev.meta.ai/events/global-hackathon",
+  },
+  {
+    name: "Gigalogy Technopreneurship Program",
+    event: "Selected to pitch LegalBuddy to industry leaders and investors",
+    date: "2026",
+    href: "https://event.gigalogy.com/",
+  },
+  {
     name: "Award of Merit",
-    event: "International Blockchain Olympiad",
+    event: "International Blockchain Olympiad · Amsterdam",
     date: "Oct 2024",
     href: "https://drive.google.com/file/d/1JBwTW0jXm-M77g4E_a-D2NaJUHX4EyMg/view?usp=sharing",
   },
   {
     name: "SDG-9 Silver Medal",
-    event: "International Blockchain Olympiad",
+    event: "International Blockchain Olympiad · Hong Kong",
     date: "Oct 2022",
     href: "https://drive.google.com/file/d/1r5VAn4hBUb7fEbmXG34dBFAzPjVzIfWr/view?usp=sharing",
   },

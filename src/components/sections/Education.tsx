@@ -43,7 +43,7 @@ export default function Education() {
   return (
     <section id="education" className="relative mx-auto max-w-[1180px] px-5 py-20 sm:px-8 sm:py-28">
       <Reveal>
-        <Eyebrow>05 — Foundations</Eyebrow>
+        <Eyebrow>05 · Foundations</Eyebrow>
       </Reveal>
       <Reveal delay={0.05}>
         <SectionTitle>

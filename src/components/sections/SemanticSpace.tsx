@@ -46,7 +46,7 @@ export default function SemanticSpace() {
       <div className="mb-10 flex flex-wrap items-end justify-between gap-8">
         <div>
           <Reveal>
-            <Eyebrow>02 — Latent Space</Eyebrow>
+            <Eyebrow>02 · Latent Space</Eyebrow>
           </Reveal>
           <Reveal delay={0.05}>
             <SectionTitle>
@@ -56,11 +56,11 @@ export default function SemanticSpace() {
         </div>
         <Reveal delay={0.1}>
           <p className="max-w-[62ch] text-[1.02rem] leading-[1.75] text-muted">
-            Every node is an embedding; the glowing links are{" "}
-            <b className="text-teal">real cosine similarities</b> computed live. A nod to how I think
-            about AI — but the map spans everything I build: software on the left, models on the
-            right, the languages and ideas that bridge them in between. Hover any node to surface its
-            nearest neighbors.
+            Every node is an embedding, and the glowing links are{" "}
+            <b className="text-teal">real cosine similarities</b> computed live in your browser. I
+            think about AI in vectors, so I laid out my skills as one. Software sits on the left,
+            models on the right, and the languages connecting them sit between. Hover any node to
+            see its nearest neighbors.
           </p>
         </Reveal>
       </div>
@@ -108,7 +108,7 @@ export default function SemanticSpace() {
                   }`}
                   role="listitem"
                   tabIndex={0}
-                  aria-label={`${n.label} — ${domainName(n.domain)}${
+                  aria-label={`${n.label} · ${domainName(n.domain)}${
                     n.kind === "project" ? ", featured project" : ""
                   }`}
                   onMouseEnter={() => setActive(n.id)}

@@ -3,7 +3,7 @@ interface EyebrowProps {
   centered?: boolean;
 }
 
-// Small mono kicker with a leading rule — section label.
+// Small mono kicker with a leading rule for section labels.
 export default function Eyebrow({ children, centered = false }: EyebrowProps) {
   return (
     <span

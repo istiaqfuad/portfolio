@@ -23,7 +23,7 @@ export default function Nav() {
         className="inline-flex items-center gap-[0.5rem] font-display text-[1.15rem] tracking-[-0.01em]"
         aria-label="Home"
       >
-        {/* latent-space node glyph — on-theme, language-neutral */}
+        {/* latent-space node glyph, on-theme and language-neutral */}
         <span className="text-[0.8em] text-teal">◉</span>
         <span>
           Fuad<span className="text-coral">.</span>

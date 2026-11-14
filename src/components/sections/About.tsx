@@ -4,8 +4,8 @@ import SectionTitle from "../ui/SectionTitle";
 import { profile } from "../../data";
 
 const STATS = [
-  { num: "3", lbl: "Disciplines — Software · AI · Research" },
-  { num: "2", lbl: "Projects built & deployed live — web + ML" },
+  { num: "3", lbl: "Fields I work in: software, AI, research" },
+  { num: "4", lbl: "Projects shipped across web, mobile and ML" },
   { num: "118M", lbl: "Model params fine-tuned & deployed" },
 ];
 
@@ -13,7 +13,7 @@ export default function About() {
   return (
     <section id="about" className="relative mx-auto max-w-[1180px] px-5 py-20 sm:px-8 sm:py-28">
       <Reveal>
-        <Eyebrow>01 — About</Eyebrow>
+        <Eyebrow>01 · About</Eyebrow>
       </Reveal>
 
       <div className="grid grid-cols-1 gap-9 md:grid-cols-[0.85fr_1.15fr]">

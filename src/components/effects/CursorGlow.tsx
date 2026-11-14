@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 // Soft blend-mode glow that trails the pointer and swells over
-// interactive targets — part of the "latent space" atmosphere.
+// interactive targets, part of the "latent space" atmosphere.
 export default function CursorGlow() {
   const ref = useRef<HTMLDivElement>(null);
 
